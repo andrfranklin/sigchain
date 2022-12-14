@@ -1,0 +1,50 @@
+@import '@fontsource/montserrat';
+
+:root {
+	--font-body: 'Montserrat', -apple-system, sans-serif;
+	--font-mono: 'Montserrat', monospace;
+	--color-theme-primary: #4396E2;
+	--color-bg-1: #1E1E1E;
+	--color-text: #FFFFFF;
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-color: var(--color-bg-1);
+	background-size: 100vw 100vh;
+	padding-inline: 5rem;
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: var(--color-theme-primary);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}

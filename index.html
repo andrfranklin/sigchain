@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/new-document-form.css'>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="new-file">
+            <label class="input-file">
+                <p class="label-title">Arquivo:</p>
+                <p id="input-file-placeholder"></p>
+                <input type="file" class="invisible" />
+            </label>
+            <div class="subscribers">
+                <label>
+                    <p class="input-title">Outros assinantes:</p>
+                    <input type="text" class="input" />
+                </label>
+                <button class="add-sub">+</button>
+            </div>
+                <p>Nenhum convidado adicionado</p>
+
+                <ul class="list" id="subscribers">
+                        
+                </ul>
+            <div class="footer">
+                <button class="submit" type="submit">Enviar</button>
+                <div class="divider">
+                <button class="cancel" type="button">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <div class="my-documents">
+        <ul class="documents"></ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+    <script src="./abi.js"></script>
+    <script src="./scripts/new-document-form.js"></script>
+    <script src="./scripts/interactive.js"></script>
+    <script src="./scripts/dapp.js"></script>
+
+</body>
+</html>
